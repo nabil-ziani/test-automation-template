@@ -1,0 +1,26 @@
+{
+  "name": "pettesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "@types/node": "^16.10.2",
+    "chai": "^4.3.4",
+    "mocha-steps": "^1.3.0",
+    "reflect-metadata": "^0.1.13",
+    "selenium-webdriver": "^4.0.0-rc-2"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.0.0",
+    "@types/selenium-webdriver": "^4.0.15",
+    "mocha": "^9.1.2"
+  },
+  "scripts": {
+    "test": "tsc && mocha 'dist/tests/post_pet.spec.js' --timeout 20000"
+  },
+  "author": "",
+  "license": "ISC"
+}
